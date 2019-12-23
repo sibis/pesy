@@ -1,0 +1,11 @@
+(dirs * \ node_modules)
+
+; (rule
+;  (targets pesy.bundle.js)
+;  (action
+;   (progn
+;    (run npm build)
+;    (run npm rollup))))
+
+
+; From npm-cli, we need pesy (the script) and pesy.bundle.js so that we can run e2e tests.

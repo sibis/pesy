@@ -1,0 +1,8 @@
+(alias
+ (name runtest)
+ (deps (:t test.t) (source_tree ../../../npm-cli))
+ (action
+  (progn
+     (run pwd)
+     (setenv PESY %{project_root}/npm-cli/pesy (run %{bin:mdx} test --syntax=cram %{t}))
+     (diff? %{t} %{t}.corrected))))

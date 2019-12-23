@@ -68,7 +68,7 @@
     }
   },
   "scripts": {
-    "test": "esy x RunUnitTests.exe"
+    "test": "esy dune runtest e2e-mdx"
   },
   "dependencies": {
     "@esy-ocaml/reason": "*",
@@ -85,7 +85,9 @@
     "ocaml": "4.6.10 - 4.8",
     "pesy-self": "*",
     "refmterr": "*",
-    "@opam/merlin": "*"
+    "@opam/merlin": "*",
+    "@opam/mdx": "*",
+    "@opam/ppx_expect": "*"
   },
   "resolutions": {
     "pesy-self": "link:./vendor/pesy",
