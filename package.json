@@ -83,7 +83,8 @@
     "@opam/yojson": "*",
     "@reason-native/pastel": "*",
     "@reason-native/rely": "*",
-    "ocaml": "4.6.10 - 4.8"
+    "ocaml": "4.6.10 - 4.8",
+    "unzip-stream": "^0.3.0"
   },
   "devDependencies": {
     "ocaml": "4.8.x",
